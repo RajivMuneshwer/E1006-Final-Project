@@ -20,6 +20,9 @@ def homePage():
 def Second_page():
     return render_template('secPage.html')
 
+@app.route("/420")
+def Third_page():
+    return render_template('thirdPage.html')
 
 #start the server
 if __name__ == "__main__":
