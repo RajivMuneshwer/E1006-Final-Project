@@ -13,8 +13,13 @@ app = Flask(__name__)
 
 #static route
 @app.route("/")
-def hello():
+def homePage():
     return render_template('index.html')
+
+@app.route("/1006")
+def Second_page():
+    return render_template('secPage.html')
+
 
 #start the server
 if __name__ == "__main__":
